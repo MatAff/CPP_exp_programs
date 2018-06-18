@@ -7,7 +7,7 @@
 
 class Derived : public Base {
 public:
-    Derived();
+    Derived(int v);
     ~Derived();
     void someMethod();
 };

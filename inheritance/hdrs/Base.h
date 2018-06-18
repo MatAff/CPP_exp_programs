@@ -3,7 +3,7 @@
 
 class Base {
 public:
-    Base() {}
+    Base(int v) {}
     virtual ~Base() {}
     virtual void someMethod()=0;
 };

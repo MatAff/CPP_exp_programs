@@ -12,7 +12,7 @@ public:
     {
         if (derivedName=="First")
         {
-            Derived* d = new Derived();
+            Derived* d = new Derived(1);
             return d;
         }
         return NULL;

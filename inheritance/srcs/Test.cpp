@@ -9,7 +9,7 @@
 int main(int argc,char ** argv)
 {
     // Assing derived class to base pointer
-    Base* b = new Derived();
+    Base* b = new Derived(1);
     b->someMethod();
 
     // Use factory method

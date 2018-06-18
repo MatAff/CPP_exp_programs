@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 
-Derived::Derived() { }
+Derived::Derived(int v) : Base(v) { } 
 Derived::~Derived() { }
 
 void Derived::someMethod()
