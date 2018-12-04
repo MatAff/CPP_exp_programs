@@ -14,7 +14,7 @@ int main(int argc,char ** argv)
 {
 
     //bool playback = false;
-    bool playback = true;
+    bool playback = false;
 
     RealSense rs(playback);
 
