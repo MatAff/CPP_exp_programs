@@ -37,7 +37,7 @@ cv::Mat RealSense::getColor()
                           (void*)colorFrame.get_data(), cv::Mat::AUTO_STEP);
 
             const rs2::frame depth_frame = frames.get_depth_frame(); // Find depth data
-            rs2::frame depth = color_map(depth_frame); // Find and colorize the depth data
+            rs2::frame depth = color_map.process(depth_frame); // Find and colorize the depth data
 
             //frame = cv::Mat(cv::Size(640, 480), CV_8UC3, (void*)depth.get_data(), cv::Mat::AUTO_STEP);
             frame = color;
@@ -51,7 +51,7 @@ cv::Mat RealSense::getColor()
                     (void*)colorFrame.get_data(), cv::Mat::AUTO_STEP);
 
       const rs2::frame depth_frame = frames.get_depth_frame(); // Find depth data
-      rs2::frame depth = color_map(depth_frame); // Find and colorize the depth data
+      rs2::frame depth = color_map.process(depth_frame); // Find and colorize the depth data
 
       //frame = cv::Mat(cv::Size(640, 480), CV_8UC3, (void*)depth.get_data(), cv::Mat::AUTO_STEP);
       frame = color;

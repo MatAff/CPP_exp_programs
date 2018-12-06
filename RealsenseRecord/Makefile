@@ -18,7 +18,7 @@ CC=g++
 OPT=-flto -O3
 DEBUG=#-g
 CFLAGS=-std=c++11 -fPIC -Wall $(OPT)# -pg
-CVINC=-I/usr/local/include/opencv
+CVINC=-I/usr/local/include/opencv4
 CVLIBS=-L/usr/local/lib -lopencv_highgui -lopencv_videoio -lopencv_core -lopencv_imgproc -lopencv_imgcodecs -lopencv_objdetect -lopencv_calib3d
 INC=-I$(HDR_DIR) $(CVINC) -I/usr/include/libusb-1.0 -I/usr/local/include
 LDFLAGS=$(CVLIBS) -lwiringPi -lpthread -lcrypt -lrealsense2 -lrt -L/usr/local/lib

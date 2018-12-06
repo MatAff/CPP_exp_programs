@@ -28,7 +28,7 @@ int main(int argc,char ** argv)
         // Clear frame
         frame = cv::Scalar(0,0,0);
 
-        frame = rs.getColor();
+//        frame = rs.getColor();
 
         // Output - display - record
         imshow("Live", frame);
